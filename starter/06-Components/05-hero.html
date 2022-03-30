@@ -1,18 +1,19 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Omnifood Hero Section</title>
-    <link href="<link rel=" preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,600;1,700&display=swap"
-        rel="stylesheet">
-
+    <link href="
+    <link rel=" preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,600;1,700&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
-        /* 
+      /* 
         SPACING SYSTEM px
         2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 /96 / 128
 
@@ -20,98 +21,121 @@
         10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
         */
 
-        /* #087f5b */
+      /* #087f5b */
 
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        html{
-            font-family: "Rubik", sans-serif;
-            color: #444444;
-        }
+      html {
+        font-family: "Rubik", sans-serif;
+        color: #444444;
+      }
 
-        .container{
-            margin: 0 auto;
-            max-width: 1200px;
-        }
+      .container {
+        margin: 0 auto;
+        max-width: 1200px;
+      }
+
+      header {
+        /* background-color: #ff4500; */
+        /* view-port height */
+        height: 100vh;
+
+        position: relative;
+
+
+        background-image: linear-gradient(rgb(34, 34, 34, 0.6),rgb(34, 34, 34, 0.6)) ,url(hero.jpg);
+        background-size: cover;
+        color: #ffffff;
+      }
+
+      nav {
+        font-size: 20px;
+        font-weight: 700;
+
+        display: flex;
+        justify-content: space-between;
+        /* background-color: #008000; */
+
+        padding-top: 48px;
+      }
+
+      /* container of the text elements */
+      .header-container {
+        width: 1200px;
+        position: absolute;
         
-        header{
-            background-color: #ff4500;
-            /* view-port height */
-            height: 100vh; 
 
-            position: relative;
-        }
-        nav {
-            font-size: 20px;
-            font-weight: 700;
-            
+        /* In relation to parent size */
+        left: 50%;
+        top: 50%;
 
-            display: flex;
-            justify-content: space-between;
-            background-color:#008000 ;
-        }
+        /* In relation to element size */
+        transform: translate(-50%, -50%);
 
-        .header-container{
-            width: 1200px;
-            position: absolute;
-            left: 50%;
-            top: 50%;
+        /* background-color: violet; */
+      }
 
-            background-color: violet;
-        }
+      .header-container-inner {
+        width: 50%;
+        /* background-color: aqua; */
+      }
+ 
+      h1 {
+        font-size: 52px;
+        margin-bottom: 32px;
+        line-height: 1.05;
+      }
 
+      p {
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 48px;
+      }
 
-        h1{
-            font-size: 52px;
-            margin-bottom: 32px;
-        }
+      .btn:link,
+      .btn:visited {
+        font-size: 20px;
+        font-weight: 600;
+        background-color: #e67e22;
+        color: #ffffff;
+        text-decoration: none;
 
-        p{
-            font-size: 20px;
-            line-height: 1.5;
-            margin-bottom: 48px;
-        }
+        /* default inline-element */
+        display: inline-block;
+        padding: 16px 32px;
+        border-radius: 9px;
+      }
 
-        .btn:link,
-        .btn:visited{
-            font-size: 20px;
-            font-weight: 600;
-            background-color:#e67e22;
-            color: #ffffff;
-            text-decoration: none;
+      .btn:hover{
+        background-color: #444444;
+      }
 
-            /* default inline-element */
-            display: inline-block;
-            padding: 16px 32px;
-            border-radius: 9px;
-        }
+      h2 {
+        font-size: 44px;
+        margin-bottom: 48px;
+      }
 
-        h2{
-            font-size: 44px;
-            margin-bottom: 48px;
-        }
-
-        section{
-            padding: 96px 0;
-            background-color: #f7f7f7;
-        }
-
+      section {
+        padding: 96px 0;
+        background-color: #f7f7f7;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="container">
-            <div>LOGO</div>
-            <div>NAVIGATION</div>
-        </nav>
+      <nav class="container">
+        <div>LOGO</div>
+        <div>NAVIGATION</div>
+      </nav>
 
-        <div class="header-container">
-            <h1>A healty meal delivered to your door, every single day</h1>
+      <div class="header-container">
+        <div class="header-container-inner">
+          <h1>A healty meal delivered to your door, every single day</h1>
           <p>
             The smart 365-days-per-year food subscription that will make you eat
             at healthy again. Tailord to your personal tastes and nutritional
@@ -119,23 +143,23 @@
           </p>
           <a href="#" class="btn">Start eating well</a>
         </div>
+      </div>
     </header>
 
     <section>
-        <div class="container">
-            <h2>Some random heading</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur doloremque reiciendis obcaecati id
-                quidem quos ducimus fuga voluptas, repellendus minima! Sint sunt eveniet necessitatibus obcaecati fugit
-                repudiandae enim nihil cumque.
-                Ratione dignissimos alias sunt voluptatem soluta at, aperiam, consectetur tenetur cupiditate nostrum
-                officiis? Suscipit odio asperiores illo sequi tenetur labore reiciendis facere incidunt ex assumenda
-                placeat, cum magnam. Quaerat, eveniet!
-            </p>
-        </div>
+      <div class="container">
+        <h2>Some random heading</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur
+          doloremque reiciendis obcaecati id quidem quos ducimus fuga voluptas,
+          repellendus minima! Sint sunt eveniet necessitatibus obcaecati fugit
+          repudiandae enim nihil cumque. Ratione dignissimos alias sunt
+          voluptatem soluta at, aperiam, consectetur tenetur cupiditate nostrum
+          officiis? Suscipit odio asperiores illo sequi tenetur labore
+          reiciendis facere incidunt ex assumenda placeat, cum magnam. Quaerat,
+          eveniet!
+        </p>
+      </div>
     </section>
-</body>
-
-
-
-
+  </body>
 </html>
